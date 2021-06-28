@@ -26,7 +26,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateTip() {
-        val stringInTextField: String = binding.costOfService.text.toString()
+        // Get the decimal value from the cost of service text field
+        val stringInTextField: String = binding.costOfServiceEditText.text.toString()
         val cost: Double? = stringInTextField.toDoubleOrNull()
 
         if (cost == null) {
